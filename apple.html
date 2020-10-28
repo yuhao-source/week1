@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:hover {
+            text-decoration: underline;
+        }
+        .top-plus{
+            background-color: black;
+        }
+        .top{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 49px;
+            background-color: black;
+            padding: 0  5px;
+            max-width: 1068px;
+            margin: 0 auto;
+        }
+        .nav{
+            background-color: black;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 40px;
+            bottom: 0;
+            list-style: none;
+            padding-top: 60px;
+            display: none;
+        }
+        .rightlogo a{
+            color: white;
+            margin-top:29px ;
+        }
+        .nav li{
+            color: white;
+            width: 80%;
+            margin: auto;
+            line-height: 45px;
+            border-bottom:solid 1px #4e4e4e ;
+            
+        }
+        .top #applew{
+            height: 40px;
+            width: 40px;
+        }
+        
+            .menu-icon{
+                width: 18px;
+                height: 100%;
+                background-color: black;
+                position: relative;
+            }
+            .menu-icon li{
+                width: 18px;
+                height: 1px;
+                background-color: white;
+                position: absolute;
+                text-decoration: none;
+                transform-origin: left;
+                transition: 0.6s;
+            }
+            .menu-icon li:nth-child(1){
+                top: -7px;
+            }
+            .menu-icon li:nth-child(2){
+                bottom: -7px;
+            }
+            
+            .logo a{
+                display: block;
+                width: 40px;
+                height: 48px;
+                background-image: url("");
+            }
+            .rightlogo a{
+                display: block;
+                width: 40px;
+                height: 48px;
+                background-image: url("");
+            }
+           
+            :hover .menu-icon li:nth-child(1){
+                top: -7px;
+                transform: rotateZ(45deg);
+            }
+            :hover .menu-icon li:nth-child(2){
+                bottom: -7px;
+                transform: rotateZ(-45deg);
+            }
+        #pic2{
+            height: 200px;
+            width: 100%;
+        }
+        h1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        input{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 50px;
+        }
+        @media screen and (max-width: 638px) {
+            .list1{
+            display: none;
+        }
+        .list2{
+            display: none;
+        }
+        .list3{
+            display: none;
+        }
+        .list4{
+            display: none;
+        }
+        
+        }
+        @media screen and (min-width: 638px){
+            .left-menu{
+                order: 2;
+                flex: auto;
+            }
+            .logo{
+                order: 1;
+            }
+            .rightlogo{
+                order: 3;
+            }
+            .menu-icon{
+                display: none;
+            }
+            .nav{
+                display: flex;
+                position: static;
+                padding: 0;
+            }
+            .nav li{
+                width: auto;
+                border-bottom: none;
+            }
+            .nav input{
+                display: none;
+            }
+            
+            .pic2{
+                height: 550px;
+            }
+            .part2{
+                position: relative;
+                bottom: 200px;
+            }
+            input{
+                width: 600px;
+                display: block;
+                margin: auto;
+            }
+            .part3{
+                display: block;
+                
+            }
+            .part3 div{
+                display: block;
+            }
+            .part5{
+                margin: auto;
+            }
+            .part5 h1{
+                font-size: 40px;
+            }
+            .part5 #pic9{
+                height: 300px;
+                width: 100%;
+            }
+            .part6{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: nowrap;
+                margin:;
+            }
+            .part6-3 {
+                width: 80%;
+                margin: auto;
+                position: relative;
+            }
+            .part6-3 ul{
+                display:flex;
+                justify-content: space-between;
+                width: 100%;
+                margin: auto;
+            }
+            .part6-3 li{
+                float: left;
+                justify-content: space-between;
+            }
+            .part6-6 {
+                float: left;
+                border: none;
+                display: block;
+                position: absolute;
+                bottom: 52px;
+                left: 300px;
+            }
+            .part6-4 a{
+                position: absolute;
+                top: 420px;
+                right: 0;
+            }
+            .part6-5{
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+            .list{
+                width: 100%;
+                margin: auto;
+                position: relative;
+                left: 100px;
+            }
+            .list1{
+                margin: auto;
+            }
+            .list2{
+                margin: auto;
+            }
+            .list3{
+                margin: auto;
+            }
+            .list4{
+                margin: auto;
+            }
+            
+
+        }
+        @media screen and (min-width: 968px){
+            #pic2{
+                height: 550px;
+            }
+            .part2{
+                position: relative;
+                bottom: 500px;
+            }
+            .part4{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .part4 div{
+                width: 300px;
+                float: left;
+                margin: auto;
+                border-top: none;
+                border-right:solid 1px #e4e4e4 ;
+            }
+            .part4 #part4-3{
+                border-right: none;
+            }
+            .part5{
+                width: 80%;
+                margin: auto;
+                text-align: center;
+            }
+            .part5-1{
+                display: block;
+                height: auto;
+                position: relative;
+                
+            }
+            .part5-1 img {
+                position: absolute;
+                right: 0;
+                width: 50%;
+            }
+            .part5-1 span{
+                position: absolute;
+                left: 0;
+                width: 50%;
+            }
+            .part5-2{
+                position: relative;
+                top: 150px;
+                display: block;
+                height: auto;
+            }
+            .part5-2 img {
+                position: absolute;
+                left: 0;
+                width: 50%;
+            }
+            .part5-2 span{
+                position: absolute;
+                right: 0;
+                width: 50%;
+            }
+            .part5-3{
+                position: relative;
+                top: 320px;
+                height: auto;
+            }
+            .part5-4{
+                position: relative;
+                top: 260px;
+                display: block;
+                height: auto;
+            }
+            .part5-4 img {
+                position: absolute;
+                left: 0;
+                width: 50%;
+            }
+            .part5-4 span{
+                position: absolute;
+                right: 0;
+                width: 50%;
+            }
+            .part5-5{
+                position: relative;
+                top: 440px;
+                display: block;
+                height: auto;
+            }
+            .part5-6{
+                position: relative;
+                top: 500px;
+                display: block;
+                height: auto;
+            }
+            .part5-6 img {
+                position: absolute;
+                left: 0;
+                width: 50%;
+            }
+            .part5-6 span{
+                position: absolute;
+                right: 0;
+                width: 50%;
+            }
+            .service{
+                position: relative;
+                top: 700px;
+            }
+            .part6{
+                position: relative;
+                top: 600px;
+            }
+            
+            
+            
+            
+        }
+        .part3{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            
+            
+        }
+        .part3 div{
+            margin: 40px 70px;
+            position: relative;
+        }
+        a{
+            text-decoration: none;
+        }
+        img{
+            width: 60px;
+            height: 60px;
+            margin: auto;
+        }
+        .part3 div p{
+            text-align: center;
+            font-size: 20px;
+            color: black;
+        }
+        .part4 div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            border-top:solid gray 1px ;
+            padding: 50px;
+        }
+        .part4 div img{
+            margin: 0 60px;
+        }
+        .part4 div p{
+            text-align: center;
+            color: rgb(128, 128, 240);
+        }
+        .part5 div{
+            padding: 50px 0;
+            margin: 50px 0;
+            border-top: solid gray 1px;
+        }
+        .part5 p{
+            font-size: 20px;
+            font-family: 宋;
+            color: grey;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .part5 a{
+            color: rgb(128, 128, 240);
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .part5 .service{
+            margin: auto;
+        }
+        .part5 img{
+            display: flex;
+            width: 400px;
+            height: 200px;
+            margin: auto;
+            
+        }
+        .part5 #pic9{
+            width: 100%;
+        }
+        .part5 .part5-5{
+            text-align: center;
+            width: 80%;
+            margin: auto;
+        }
+        .part6{
+            background-color:#f2f2f2;
+            height: 600px;
+            display: block;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            
+        }
+        .part6 p{
+            text-align: center;
+        }
+        
+        .part6 a{
+            color: black;
+        }
+        .part6 img{
+            width: 30px;
+            height: 30px;
+        }
+        .part6 li{
+            position: relative;
+            list-style: none;
+            color: black;
+            top: 50px;
+            line-height: 40px;
+        }
+        .part6 div{
+            margin: auto;
+        }
+        .part6-2 img{
+            position: relative;
+            top: 5px;
+            right: 10px;
+        }
+        .part6-2 {
+            display: flex;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+        }
+        .part6-3{
+            position: relative;
+            bottom: 60px;
+            
+        }
+        .part6-3-1{
+            position: relative;
+            top: 50px;
+            left: 40px;
+            width: auto;
+        }
+        .part6-3 li{
+           border-bottom:solid gray 1px ;
+        }
+
+        .part6-3 img{
+            position: relative;
+            top: 8px;
+
+        }
+        .part6-4{
+            position: relative;
+            top: 20px;
+        }
+        .part6-4 img{
+            width: 15px;
+            height: 15px;
+        }
+        .part6-5{
+            font-size: 15px;
+            color: gray;
+            position: absolute;
+            left: 0px;
+        }
+        .part6-6{
+            display: flex;
+            justify-content: space-between;
+        }
+        .part6-6 li{
+            font-size: 12px;
+            float: left;
+        }
+        .part6-6 ul{
+            position: relative;
+            bottom: 200px;
+        }
+        .part6-3-2{
+            display: block;
+            text-align: left;
+        }
+        .part6-3-2{
+            text-align: left;
+        }
+        .list1{
+            font-size: 12px;
+        }
+        .list2{
+            font-size: 12px;
+        }
+        .list3{
+            font-size: 12px;
+        }
+        .list4{
+            font-size: 12px;
+        }
+        .list{
+            
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            left: 0;
+            margin: auto;
+        
+        }
+    </style>
+</head>
+<body>
+<div class="top-plus">
+    <div class="top">
+        <div class="left-menu">
+            <ul class="menu-icon">
+                <li></li>
+                <li></li>
+            </ul>
+            <ul class="nav">
+                <input type="text" placeholder="Search Support" style="width: 80%;margin: auto;">
+                <li>Mac</li>
+                <li>iPad</li>
+                <li>iPhone</li>
+                <li>Watch</li>
+                <li>TV</li>
+                <li>Music</li>
+                <li>Support</li>
+            </ul>
+        </div>
+        <div class="logo">
+            <a href="#">
+                <img src="../Apple/image/applew.jpg" alt="" id="applew">
+            </a>
+        </div>
+        <div class="rightlogo">
+            <a href="#">Bag</a>
+        </div>
+    </div>
+</div>
+    <div class="part1">
+        <img src="../Apple/image/pic2.jpg" alt="" id="pic2">
+    </div>
+    <div class="part2">
+        <h1>Welcome to Apple Support</h1>
+        <input type="text" placeholder="Search SUpport">
+    </div>
+    <div class="part3">
+        <div>
+            <a href="#">
+                <img src="../Apple/image/iphone.png" alt="" id="iphone">
+                <p>iPhone</p>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="../Apple/image/mac.png" alt="" id="mac">
+                <p>Mac</p>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="../Apple/image/ipad.png" alt="" id="ipad">
+                <p>iPad</p>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="../Apple/image/watch.png" alt="" id="watch">
+                <p>Watch</p>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="../Apple/image/music.png" alt="" id="music">
+                <p>Music</p>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="../Apple/image/tv.png" alt="" id="tv">
+                <p>TV</p>
+            </a>
+        </div>
+        
+    </div>
+    <div class="part4">
+        <div>
+            <a href="#">
+                <img src="../Apple/image/pic3.png" alt="" id="pic3">
+                <p>Forgot Apple ID or Password</p>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="../Apple/image/pic4.png" alt="" id="pic4">
+                <p> Apple Repair </p>
+            </a>
+        </div>
+        <div id="part4-3">
+            <a href="#">
+                <img src="../Apple/image/pic5.png" alt="" id="pic5">
+                <p> Billing and Subscriptions </p>
+            </a>
+        </div>
+    </div>
+    <div class="part5">
+        <div class="part5-1">
+            <img src="../Apple/image/pic6.jpg" alt="" id="pic6">
+            <span>
+                <h1>Update to iOS 14</h1>
+                <p>Add widgets to your Home Screen, automatically organize your apps, and have even more fun with Messages.</p>
+                <a href="#">Get iOS 14</a>
+            </span>
+        </div>
+        <div class="part5-2">
+            <img src="../Apple/image/pic7.jpg" alt="" id="pic7">
+            <span>
+                <h1>Trade in with Apple</h1>
+                <p>Turn an eligible device into credit towards a new one, or recycle it for free. Apple Trade In is good for you and the planet.</p>
+                <a href="#">Learn more</a>
+            </span>
+            
+        </div>
+        <div class="part5-3">
+            <img src="../Apple/image/pic8.jpg" alt="" id="pic9">
+            <h1>Get Support</h1>
+            <p>Choose a product and we’ll find you the best solution.</p>
+            <a href="">Start now</a>
+        </div>
+        <div class="part5-4">
+            <img src="../Apple/image/pic10.png" alt="" id="pic10">
+            <span>
+                <h1>Service and support from Apple experts</h1>
+                <p>AppleCare products provide additional hardware service options and expert technical support from Apple.</p>
+                <a href="">Learn about AppleCare plans</a>
+            </span>
+        </div>
+        <div class="part5-5">
+            <h2>Beware of counterfeit parts</h2>
+            <p>Some counterfeit and third party power adapters and batteries may not be designed properly and could result in safety issues. To ensure you receive a genuine Apple battery during a battery replacement, we recommend visiting an Apple Store or Apple Authorized Service Provider. If you need a replacement adapter to charge your Apple device, we recommend getting an Apple power adapter.
+            </br>
+            </br>
+                Also non-genuine replacement displays may have compromised visual quality and may fail to work correctly. Apple-certified screen repairs are performed by trusted experts who use genuine Apple parts.</p>
+        </div>
+        <div class="part5-6">
+            <img src="../Apple/image/pic11.jpg" alt="">
+            <span>
+                <h1>Be aware of gift card scams</h1>
+                <a href="#">Learn more</a>
+            </span>
+        </div>
+        <div class="service">
+            <h2>Apple Service Programs</h2>
+            <a href="#">iPad Air (3rd generation) Service Program for Blank Screen Issue</a>
+        </br>
+    </br>
+            <a href="#">Smart Battery Case Replacement Program for iPhone XS, iPhone XS Max, and iPhone XR</a>
+        </br>
+    </br>
+            <a href="#">iPhone 6s and iPhone 6s Plus Service Program for No Power Issues</a>
+        </br>
+    </br>
+            <a href="#">15-inch MacBook Pro Battery Recall Program</a>
+        </br> 
+    </br>
+            <a href="#">Apple Three-Prong AC Wall Plug Adapter Recall Program</a>
+        </br>
+    </br>
+            <a href="#">See all programs</a>
+        </div>
+    </div>
+    <div class="part6">
+        <div class="part6-1">
+            <p>
+            Stay Connected with Apple Support</p></div>
+        <div class="part6-2">
+            <a href="#">
+                <img src="../Apple/image/pic12.png" alt="" id="pic12">
+            </a>
+            <a href="#">
+                <img src="../Apple/image/pic13.png" alt="" id="pic13">
+            </a>
+        </div>
+        <div class="part6-3"> 
+            <div class="part6-3-1">   
+                <img src="../Apple/image/apple.png" alt="">
+                <span><a href="#">Support</a></span>
+            </div>
+            <ul class="part6-3-2">
+                <li>
+                    <a href="#">Get Support</a>
+                    
+                </li>
+                <li>
+                    <a href="#">Service&Repair</a>
+                    
+                </li>
+                <li>
+                    <a href="#">Resources</a>
+                    
+                    
+                </li>
+                <li>
+                    <a href="#">Connect</a>
+                    
+                </li>
+            </ul>
+        </div>
+        <div class="list">
+            <div>
+                <ul class="list1">
+                    <li>iPhone Support</li>
+                    <li>iPad Support</li>
+                    <li>Watch Support</li>
+                    <li>Mac Support</li>
+                    <li>Music Support</li>
+                    <li>Apple ID Support</li>
+                    <li>Apps Support</li>
+                    <li>Support Site Map</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="list2">
+                    <li>Apple Repair Options</li>
+                    <li>Service and Repair Information</li>
+                    <li>AppleCare Products</li>
+                    <li>Hardware Warranties</li>
+                    <li>Software License Agreements</li>
+                    <li>Complimentary Support</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="list3">
+                    <li>Downloads & Updates</li>
+                    <li>Manuals</li>
+                    <li>Tech Specs</li>
+                    <li>Accessibility</li>
+                    <li>Education</li>
+                    <li>Business</li>
+                    <li>Apple Support Videos</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="list4">
+                    <li>Contact Us</li>
+                    <li>Phone Numbers</li>
+                    <li>My Support</li>
+                    <li>Apple Support App</li>
+                    <li>Apple Support Communities</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="part6-4">
+            <a href="#">
+                <img src="../Apple/image/us.png" alt="" id="us">
+                <span>United States</span>
+            </a>
+        </div>
+        <div class="part6-5"><p>Copyright © 2020 Apple Inc. All rights reserved.</p></div>
+        <div class="part6-6">
+            <li>
+                <a href="#">Privacy Policy</a>
+                
+            </li>
+            <li>
+                <a href="#">Terms of Use</a>
+                
+            </li>
+            <li>
+                <a href="#"> Sales and Refunds</a>
+                
+            </li>
+            <li>
+                <a href="#"> Site Map</a>
+                
+            </li>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
